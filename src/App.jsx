@@ -4,6 +4,7 @@ import Home from "./pages/HomePG";
 import About from "./pages/AboutPG";
 import Contact from "./pages/ContactPG";
 import Products from "./pages/prodPG";
+import Error from "./components/Error";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/products" element={<Products />} />
+        <Route path="*" element={<Error/>}/>
       </Routes>
     </div>
   );
